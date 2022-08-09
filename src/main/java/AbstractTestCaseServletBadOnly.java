@@ -15,10 +15,12 @@ function.
  */
 
 import java.io.IOException;
+import java.io.Serial;
 import javax.servlet.http.*;
 
 public abstract class AbstractTestCaseServletBadOnly extends AbstractTestCaseServletBase 
 {
+    @Serial
     private static final long serialVersionUID = 1L; /* needed since Servlets are serializable */
     
     public abstract void bad(HttpServletRequest request,
