@@ -62,6 +62,7 @@ public class CWE476_NULL_Pointer_Dereference__binary_if_01 extends AbstractTestC
            InstantiationException, IllegalAccessException
     {
         mainFromParent(args);
+        // Test for action
     }
 }
 
