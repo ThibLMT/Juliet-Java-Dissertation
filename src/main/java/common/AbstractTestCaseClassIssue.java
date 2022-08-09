@@ -1,4 +1,4 @@
-/*
+package common;/*
 @description This abstract class is meant to be used by testcases that have a flaw
 outside of good or bad function.  These flaws are part of the class.  For an 
 example, see CWE 580.

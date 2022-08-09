@@ -1,4 +1,4 @@
-/*
+package common;/*
 @description This abstract class is the base for test cases that only have a "bad"
 function.
 

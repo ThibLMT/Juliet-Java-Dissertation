@@ -1,5 +1,5 @@
-/* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE476_NULL_Pointer_Dereference__binary_if_01.java
+package CWE;/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE.CWE476_NULL_Pointer_Dereference__binary_if_01.java
 Label Definition File: CWE476_NULL_Pointer_Dereference.pointflaw.label.xml
 Template File: point-flaw-01.tmpl.java
 */
@@ -12,7 +12,7 @@ Template File: point-flaw-01.tmpl.java
 * Flow Variant: 01 Baseline
 *
 * */
-
+import common.*;
 
 public class CWE476_NULL_Pointer_Dereference__binary_if_01 extends AbstractTestCase
 {
@@ -61,7 +61,7 @@ public class CWE476_NULL_Pointer_Dereference__binary_if_01 extends AbstractTestC
     public static void main(String[] args) throws ClassNotFoundException,
            InstantiationException, IllegalAccessException
     {
-        mainFromParent(args);
+        AbstractTestCaseBase.mainFromParent(args);
         // Test for action
     }
 }

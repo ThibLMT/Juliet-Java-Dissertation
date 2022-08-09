@@ -1,12 +1,10 @@
-/*
-@description This abstract class is meant to be used by testcases that have a flaw
-outside of good or bad function.  These flaws are part of the class.  For an 
-example, see CWE 580.
+package common;/*
+@description This abstract class is the base for test cases that only have a "bad" function.
 
 */
 
-public abstract class AbstractTestCaseClassIssueBad extends AbstractTestCaseBase implements Cloneable
-{    
+public abstract class AbstractTestCaseBadOnly extends AbstractTestCaseBase {
+
     public abstract void bad() throws Throwable;
     
     public void runTest(String className) 
@@ -21,7 +19,8 @@ public abstract class AbstractTestCaseClassIssueBad extends AbstractTestCaseBase
         } 
         catch (Throwable throwableException) 
         {
-            IO.writeLine("Caught a throwable from bad() for Class "  + className);
+
+            IO.writeLine("Caught a throwable from bad() for Class " + className);
 
             IO.writeLine("Throwable's message = " + throwableException.getMessage());
             
@@ -35,4 +34,4 @@ public abstract class AbstractTestCaseClassIssueBad extends AbstractTestCaseBase
             } 
         } 
     } /* runTest */
-} /* class */
+}

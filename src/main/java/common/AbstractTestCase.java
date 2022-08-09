@@ -1,4 +1,4 @@
-/*
+package common;/*
 @description This abstract class is the base for the majority of 
 test cases that are not Servlet or class based issue and have both
 a "bad" and "good" function.

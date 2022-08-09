@@ -1,6 +1,6 @@
-/*
+package common;/*
 @description This abstract class is the base for all non-Servlet
-AbstractTestCase classes.
+common.AbstractTestCase classes.
 
 */
 

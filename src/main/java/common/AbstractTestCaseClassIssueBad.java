@@ -1,13 +1,13 @@
-/*
+package common;/*
 @description This abstract class is meant to be used by testcases that have a flaw
 outside of good or bad function.  These flaws are part of the class.  For an 
 example, see CWE 580.
 
 */
 
-public abstract class AbstractTestCaseClassIssueGood extends AbstractTestCaseBase implements Cloneable
-{
-    public abstract void good() throws Throwable;
+public abstract class AbstractTestCaseClassIssueBad extends AbstractTestCaseBase implements Cloneable
+{    
+    public abstract void bad() throws Throwable;
     
     public void runTest(String className) 
     {
@@ -15,14 +15,13 @@ public abstract class AbstractTestCaseClassIssueGood extends AbstractTestCaseBas
 
         try 
         {
-            good();
-    
-            IO.writeLine("Completed good() for Class " + className);  
-        }
+            bad();
+            
+            IO.writeLine("Completed bad() for Class " + className);
+        } 
         catch (Throwable throwableException) 
         {
-
-            IO.writeLine("Caught a throwable from good() for Class " + className);
+            IO.writeLine("Caught a throwable from bad() for Class "  + className);
 
             IO.writeLine("Throwable's message = " + throwableException.getMessage());
             
@@ -34,6 +33,6 @@ public abstract class AbstractTestCaseClassIssueGood extends AbstractTestCaseBas
             {
                 IO.writeLine(stackTraceElement.toString());
             } 
-        }
-    } /* runTest */   
+        } 
+    } /* runTest */
 } /* class */
